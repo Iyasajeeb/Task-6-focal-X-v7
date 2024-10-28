@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.bg-color-1{
+    background-color: #F3F2EC !important; 
+}
+.bg-color-2{
+    background-color: #EDEBE4 !important; 
+}
+.btn-color{
+    border: 5px solid #C4A790 !important;
+}
+.hero{
+    height: calc(100vh - 56px) !important;
+    margin-top: 56px;
+}
+h2{
+    font-family: "Playfair Display" , serif;
+}
+.card-title{
+    font-family: "Playfair Display" , serif;
+    color: #7C561A;
+}
+.card-author{
+
+    color: #7D807E;
+}
+.view_more{
+    cursor: pointer;
+}
