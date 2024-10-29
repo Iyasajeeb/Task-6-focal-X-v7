@@ -12,6 +12,10 @@
 .btn-color{
     border: 5px solid #C4A790 !important;
 }
+.navbar-toggler{
+    border: none;
+    color:#7D807E ;
+}
 .navbar-expand-lg .navbar-nav .nav-link{
     padding: 20px;
     font-size: 20px;
@@ -34,7 +38,9 @@ h2{
 .h2-extra-size{
     font-size: 100px;
 }
-
+.h2-mid-size{
+    font-size: 70px;
+}
 .card-title{
     font-family: "Playfair Display" , serif;
     color: #7C561A;
