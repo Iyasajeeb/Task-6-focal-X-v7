@@ -12,13 +12,29 @@
 .btn-color{
     border: 5px solid #C4A790 !important;
 }
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 20px;
+    font-size: 20px;
+}
+.navbar-nav .nav-link.active{
+    color: #e4b768;
+}
 .hero{
     height: calc(100vh - 56px) !important;
     margin-top: 56px;
 }
-h2{
-    font-family: "Playfair Display" , serif;
+.hero-btn{
+    color: #C6AB94;
+    border:1px solid #C6AB94;
+    width: 200px;
 }
+h2{
+    font-family: "Playfair Display" , serif; 
+}
+.h2-extra-size{
+    font-size: 100px;
+}
+
 .card-title{
     font-family: "Playfair Display" , serif;
     color: #7C561A;
@@ -29,4 +45,16 @@ h2{
 }
 .view_more{
     cursor: pointer;
+}
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link{
+    border-bottom-color : #907C39;
+}
+.nav-link{
+    color: #7D807E ;
+}
+.nav-link:focus, .nav-link:hover{
+    
+    border-bottom-color : #907C39;
+    color: black ;
+   
 }
