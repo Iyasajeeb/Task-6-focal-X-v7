@@ -113,10 +113,13 @@ h3{
     }
     
     .hero img{
-        padding-top:100px !important;
-        margin-top: 56px !important;
+        padding-top:20px !important;
+        margin-top: 10px !important;
         width:200px;
         
+    }
+    .div-hero{
+        text-align: center;
     }
     .hero h2{
         font-size: 50px;
