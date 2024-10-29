@@ -23,6 +23,48 @@
 .navbar-nav .nav-link.active{
     color: #e4b768;
 }
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link{
+    border-bottom-color : #907C39;
+}
+.nav-link{
+    color: #7D807E ;
+}
+.nav-link:focus, .nav-link:hover{
+    
+    border-bottom-color : #907C39;
+    color: black ;
+   
+}
+.line::after{
+    content: "";
+    height: 1px;
+    width: 35%;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    border-radius: 20px;
+    background-color: #c4c4c4;
+}
+.line::before{
+    content: "";
+    height: 1px;
+    width: 35%;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    border-radius: 20px;
+    background-color: #c4c4c4;
+}
+.line-title::after{
+    content: "";
+    height: 3px;
+    width: 60px;
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    background-color: #7C561A;
+}
+
 .hero{
     height: calc(100vh - 56px) !important;
     margin-top: 56px;
@@ -39,7 +81,7 @@ h2{
     font-size: 100px;
 }
 .h2-mid-size{
-    font-size: 70px;
+    font-size: 50px !important;
 }
 .card-title{
     font-family: "Playfair Display" , serif;
@@ -52,15 +94,59 @@ h2{
 .view_more{
     cursor: pointer;
 }
-.nav-underline .nav-link.active, .nav-underline .show>.nav-link{
-    border-bottom-color : #907C39;
+.font-playfair{
+    font-family: "Playfair Display" , serif;
 }
-.nav-link{
-    color: #7D807E ;
+h3{
+    font-family: "Playfair Display" , serif;
 }
-.nav-link:focus, .nav-link:hover{
+.color-black{
+    color: black;
+}
+.color-brown{
+    color: #7C561A;
+}
+
+@media (max-width:576px) and (min-width:300px){
+    .hero{
+        height:100vh !important;
+    }
     
-    border-bottom-color : #907C39;
-    color: black ;
-   
+    .hero img{
+        padding-top:100px !important;
+        margin-top: 56px !important;
+        width:200px;
+        
+    }
+    .hero h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    .hero-p{
+        font-size: 15px !important;
+        text-align: center;
+    }
+    .h2-extra-size{
+        font-size: 40px !important;
+    }
+    .h2-mid-size{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .clients{
+        padding: 50px;
+    }
+    #best-selling-book h2{
+        text-align: start;
+    }
+    #best-selling-book img{
+
+        width: 90%;
+    }
+    .line::after{
+        width: 20%;
+    }
+    .line::before{
+        width: 20%;
+    }
 }

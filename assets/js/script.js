@@ -29,21 +29,20 @@ fetch('https://wolnelektury.pl/api/authors/adam-mickiewicz/kinds/liryka/parent_b
     {
       console.log(res);
       DivBestSellingBook.innerHTML +=`
-      <div class="d-flex justify-content-center align-content-center flex-warp">
-          <div class="col-lg-4 col-md-12 col-sm-12">
+
+          <div class="col-lg-4 col-md-12 text-center py-4">
              <img class="w-75 shadow p-4 bg-color-2" src="${res.simple_thumb}"/>
           </div>
-          <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center align-content-center flex-column  ">
-            <h2 class="h2-mid-size pb-5 mb-4 d-inline">Best Selling Book</h2>
-            <p class="fs-4 card-author pb-2 d-inline"> By ${res.authors[0].name}</p>
+          <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center align-content-center flex-column py-4 ">
+            <h2 class="p mb-4 d-inline line-title position-relative">Best Selling Book</h2>
+            <p class="fs-4 card-author py-3 d-inline"> By ${res.authors[0].name}</p>
             <h2 class="mb-4 d-inline">${res.title}</h2>
             <div class ="w-50">
-              <p class="fs-5 card-author class=">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequuntur perspiciatis fugiat.</p>
+              <p>${res.fragment_data.html}</p>
             </div>
              <p class="view_more fs-6 fw-bolder text-start py-5 d-inline">Shop It Now <i class="fa-solid fa-arrow-right"></i></p>
           </div>
 
-      </div>
       `
     };
 
