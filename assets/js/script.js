@@ -29,7 +29,7 @@ fetch('https://wolnelektury.pl/api/authors/adam-mickiewicz/kinds/liryka/parent_b
     {
       console.log(res);
       DivBestSellingBook.innerHTML +=`
-      <div class="d-flex justify-content-center">
+      <div class="d-flex justify-content-center align-content-center">
           <div class="col-lg-4 col-md-12 col-sm-12">
              <img class="w-75 shadow p-4 bg-color-2" src="${res.simple_thumb}"/>
           </div>
@@ -42,8 +42,6 @@ fetch('https://wolnelektury.pl/api/authors/adam-mickiewicz/kinds/liryka/parent_b
             </div>
             <p class="view_more fs-6 fw-bolder text-start py-5">Shop It Now <i class="fa-solid fa-arrow-right"></i></p>
           </div>
-            
-      
       </div>
       `
     };
@@ -55,7 +53,7 @@ fetch('https://wolnelektury.pl/api/authors/adam-mickiewicz/kinds/liryka/parent_b
     let DivPopulardBooks = document.getElementById('popular-books');
     function  popularBooks(res)
     {
-      for (let index = 0; index < 46; index++ ) {
+      for (let index = 0; index <8; index++ ) {
 
         console.log(res);
         DivPopulardBooks.innerHTML += `
